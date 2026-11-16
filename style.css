@@ -512,3 +512,5 @@ header.top .brand { font-size: 25px; }
 .bf { -webkit-transform-style: flat; transform-style: flat; }
 @media (prefers-reduced-motion: reduce) { .bf { transition: none; } }
 @media print { .bf.back { visibility: hidden !important; } .bey.flip .bf.front { visibility: visible !important; } }
+
+.bf { transition: visibility 0s linear .21s; }
