@@ -502,3 +502,13 @@ header.top .brand { font-size: 25px; }
   .qr img { width: 84px; height: 84px; }
   .qr { font-size: 12px; }
 }
+
+/* iOS Safari ignores backface-visibility when a face has animated or filtered children, so the mirrored front shows through the back. Hide each face explicitly at the half-way point of the flip. */
+.bf { transition: visibility 0s linear .3s; }
+.bf.back { visibility: hidden; }
+.bey.flip .bf.back { visibility: visible; }
+.bey.flip .bf.front { visibility: hidden; }
+.bf, .bf * { -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.bf { -webkit-transform-style: flat; transform-style: flat; }
+@media (prefers-reduced-motion: reduce) { .bf { transition: none; } }
+@media print { .bf.back { visibility: hidden !important; } .bey.flip .bf.front { visibility: visible !important; } }
