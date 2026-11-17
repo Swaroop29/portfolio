@@ -30,7 +30,10 @@ const projects = [
 ];
 const repos = [
   { n: "company-brain", d: "Graph agent over a company knowledge graph. Shows the exact Cypher query behind every answer.", l: "Python", c: "#3572A5", s: 1, u: "https://github.com/Swaroop29/company-brain" },
-  { n: "hackerrank-orchestrate-may26", d: "RAG triage agent for the HackerRank Orchestrate hackathon. Ranked 99th of 12,885.", l: "Python", c: "#3572A5", s: 0, u: "https://github.com/Swaroop29/hackerrank-orchestrate-may26" }
+  { n: "hackerrank-orchestrate-may26", d: "RAG triage agent for the HackerRank Orchestrate hackathon. Ranked 99th of 12,885.", l: "Python", c: "#3572A5", s: 0, u: "https://github.com/Swaroop29/hackerrank-orchestrate-may26" },
+  { n: "HydrogenHub", d: "Geospatial cost model and interactive map for green hydrogen supply in the UK.", l: "Python", c: "#3572A5", s: 0, u: "https://github.com/Swaroop29/HydrogenHub" },
+  { n: "My-City-Android-Studios-", d: "Android app for municipality complaint registration.", l: "Java", c: "#b07219", s: 0, u: "https://github.com/Swaroop29/My-City-Android-Studios-" },
+  { n: "Online-Food-Management", d: "DBMS mini project: online food management system.", l: "PHP", c: "#4F5D95", s: 0, u: "https://github.com/Swaroop29/Online-Food-Management" }
 ];
 const skills = [
   { n: "Java", s: "Languages", g: "linear-gradient(160deg,#7a1410,#e5231b)" },
