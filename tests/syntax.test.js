@@ -4,7 +4,7 @@ const assert = require('node:assert');
 const vm = require('vm');
 const { read } = require('./helpers');
 
-for (const file of ['data.js', 'script.js']) {
+for (const file of ['data.js', 'script.js', 'analytics.js']) {
   test(`${file} is valid JavaScript`, () => {
     assert.doesNotThrow(() => new vm.Script(read(file), { filename: file }));
   });

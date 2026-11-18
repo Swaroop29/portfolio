@@ -31,6 +31,11 @@ Every change must pass the tests before it goes live.
 - `e2e/a11y.spec.js`: no critical accessibility problems.
 - Run on Chrome, Firefox and Safari engines and on desktop, laptop, iPad, iPhone and Android profiles.
 
+**Analytics**: `analytics.js` sends named events to GoatCounter (cookie-free, no personal data): profile chosen,
+project opened, project and repo links, resume views and downloads, contact clicks, card flips, sections reached,
+scroll depth, time on page, keyboard shortcuts, screen size class, referrer and JavaScript errors seen by real visitors.
+View them at https://swaroop29.goatcounter.com (event rows start with `event/`).
+
 **On GitHub** (`.github/workflows/`):
 - `ci.yml` runs everything on every pull request and every push to `main`, uploads the full report, and emails it on failure.
 - `live-check.yml` tests the live site after each deploy and every 6 hours.

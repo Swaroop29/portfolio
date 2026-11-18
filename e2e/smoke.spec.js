@@ -25,7 +25,8 @@ test('"Continue as guest" works', async ({ page }) => {
 
 test('every section renders its content', async ({ page }) => {
   await enterSite(page);
-  await expect(page.locator('#t-projects > *')).toHaveCount(6);
+  const n = await page.evaluate(() => projects.length);
+  await expect(page.locator('#t-projects > *')).toHaveCount(n);
   await expect(page.locator('#t-repos > *')).not.toHaveCount(0);
   await expect(page.locator('#t-skills > *')).not.toHaveCount(0);
   await expect(page.locator('#edu')).toBeAttached();
