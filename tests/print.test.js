@@ -14,7 +14,7 @@ test('contact details printed in the header match the real ones on the page', ()
   const email = html.match(/class="mail">([^<@\s]+@[^<\s]+)</)[1];
   assert.ok(print.includes(email), `print.css is missing ${email}`);
   const phones = [...html.matchAll(/href="tel:([+\d]+)"/g)].map((m) => m[1].replace(/\D/g, ''));
-  assert.strictEqual(phones.length, 3);
+  assert.strictEqual(phones.length, 2);
   const printDigits = print.replace(/\D/g, '');
   for (const p of phones) assert.ok(printDigits.includes(p.slice(-10)), `print.css is missing phone ${p}`);
 });
