@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('./fixtures');
 const { enterSite } = require('./helpers');
 
 test('no sideways scrolling on this screen size', async ({ page }) => {

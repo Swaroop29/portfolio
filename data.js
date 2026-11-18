@@ -26,13 +26,20 @@ const projects = [
     problem: "People without easy access to traditional banking, such as international students, low-income households and minorities, face high interest rates and collateral demands when they need money in an emergency.", built: "A community-driven lending platform that pairs community lending networks with machine learning credit-assessment models, plus financial education features. Built with a React front end, a Python back end and MongoDB.",
     result: "Winner, Hack South West 2024. Written up in a published paper", stack: "React, Python, MongoDB, scikit-learn, TensorFlow", role: "Built it and wrote the paper",
     blurb: "A community lending platform that uses ML to make fair, transparent credit decisions.", tags: ["React","Python","MongoDB"], arch: ["Community","Loan request","ML credit model","Decision"], diff: "",
-    extra: [{ l: "Read the paper", u: "https://doi.org/10.5281/zenodo.24286315" }] }
+    extra: [{ l: "Read the paper", u: "https://doi.org/10.5281/zenodo.24286315" }] },
+  {
+    t: "This Portfolio", sub: "HTML &middot; CSS &middot; JS &middot; CI", badge: "THIS SITE", g: "linear-gradient(135deg,#1a1a1d 0%,#e5231b 55%,#ff8a6b 100%)",
+    problem: "A CV is a flat list. I wanted a recruiter, a manager and an engineer to each find what they need in under a minute, and I wanted proof the site keeps working.", built: "A streaming-style portfolio with a profile picker, project pages, flip cards and an education timeline. Plain HTML, CSS and JavaScript on Cloudflare Pages, with automated tests and a CI pipeline on every change.",
+    result: "Every change is tested on desktop, tablet and phone profiles before it deploys", stack: "HTML, CSS, JavaScript, Cloudflare Pages, GitHub Actions, Playwright, GoatCounter", role: "Designed and built it, working with Claude",
+    blurb: "This site. A streaming-style portfolio with automated browser tests and CI.", tags: ["JavaScript","Playwright","GitHub Actions"], arch: ["GitHub","Tests (CI)","Cloudflare Pages","Live check"], diff: "A hand-edited change once broke the live site for about ten hours. Now every change is tested on real browsers and devices before it deploys, and a live-site check raises an alert if anything breaks.",
+    src: "https://github.com/Swaroop29/portfolio" }
 ];
 const repos = [
   { n: "company-brain", d: "Graph agent over a company knowledge graph. Shows the exact Cypher query behind every answer.", l: "Python", c: "#3572A5", s: 1, u: "https://github.com/Swaroop29/company-brain" },
   { n: "hackerrank-orchestrate-may26", d: "RAG triage agent for the HackerRank Orchestrate hackathon. Ranked 99th of 12,885.", l: "Python", c: "#3572A5", s: 0, u: "https://github.com/Swaroop29/hackerrank-orchestrate-may26" },
   { n: "HydrogenHub", d: "Geospatial cost model and interactive map for green hydrogen supply in the UK.", l: "Python", c: "#3572A5", s: 0, u: "https://github.com/Swaroop29/HydrogenHub" },
   { n: "My-City-Android-Studios-", d: "Android app for municipality complaint registration.", l: "Java", c: "#b07219", s: 0, u: "https://github.com/Swaroop29/My-City-Android-Studios-" },
+  { n: "portfolio", d: "This site: a streaming-style portfolio with automated browser tests and CI.", l: "JavaScript", c: "#f1e05a", s: 0, u: "https://github.com/Swaroop29/portfolio" },
   { n: "Online-Food-Management", d: "DBMS mini project: online food management system.", l: "PHP", c: "#4F5D95", s: 0, u: "https://github.com/Swaroop29/Online-Food-Management" }
 ];
 const skills = [

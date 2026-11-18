@@ -5,6 +5,9 @@ const vm = require('vm');
 const { JSDOM, VirtualConsole } = require('jsdom');
 const { read, loadData } = require('./helpers');
 
+const open = []; // every fake window we create, closed after each test so timers cannot keep Node alive
+test.afterEach(() => { while (open.length) open.pop().close(); });
+
 function boot() {
   const errors = [];
   const vc = new VirtualConsole();
@@ -12,6 +15,7 @@ function boot() {
   const html = read('index.html').replace(/<script[^>]*src=[^>]*><\/script>/g, ''); // we inject our own below
   const dom = new JSDOM(html, { runScripts: 'outside-only', pretendToBeVisual: true, virtualConsole: vc, url: 'http://localhost/' });
   const w = dom.window;
+  open.push(w);
   w.IntersectionObserver = class { observe() {} unobserve() {} disconnect() {} };
   w.matchMedia = w.matchMedia || (() => ({ matches: false, addEventListener() {}, removeEventListener() {} }));
   w.HTMLMediaElement.prototype.play = () => Promise.resolve();

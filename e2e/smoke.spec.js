@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('./fixtures');
 const { watchProblems, enterSite, skipIntro } = require('./helpers');
 
 test('page loads with no script errors, console errors or missing files', async ({ page }) => {
@@ -16,16 +16,18 @@ test('picker shows the four profiles and choosing one enters the site', async ({
   await expect(page.locator('#picker')).toHaveClass(/gone/);
 });
 
-test('"Continue as guest" works', async ({ page }) => {
+test('"Just Browsing" works and there is no separate guest button', async ({ page }) => {
   await page.goto('/');
   await skipIntro(page);
-  await page.locator('#skip').click();
+  await expect(page.locator('#skip')).toHaveCount(0);
+  await page.locator('.profile[data-id="guest"]').click();
   await expect(page.locator('#picker')).toHaveClass(/gone/);
 });
 
 test('every section renders its content', async ({ page }) => {
   await enterSite(page);
-  await expect(page.locator('#t-projects > *')).toHaveCount(6);
+  const n = await page.evaluate(() => projects.length);
+  await expect(page.locator('#t-projects > *')).toHaveCount(n);
   await expect(page.locator('#t-repos > *')).not.toHaveCount(0);
   await expect(page.locator('#t-skills > *')).not.toHaveCount(0);
   await expect(page.locator('#edu')).toBeAttached();

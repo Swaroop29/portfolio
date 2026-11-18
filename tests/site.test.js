@@ -24,6 +24,12 @@ test('data.js loads before script.js', () => {
   assert.ok(d < s, 'data.js must come first');
 });
 
+test('analytics.js loads after the page script', () => {
+  const s = html.indexOf('src="script.js"');
+  const a = html.indexOf('src="analytics.js"');
+  assert.ok(a > s && s > -1, 'analytics.js must be included after script.js');
+});
+
 test('every id the script looks up exists in the page', () => {
   const ids = [...read('script.js').matchAll(/getElementById\('([^']+)'\)/g)].map((m) => m[1]);
   const missing = [...new Set(ids)].filter((id) => !new RegExp(`id="${id}"`).test(html));

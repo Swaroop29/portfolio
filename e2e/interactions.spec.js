@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('./fixtures');
 const { enterSite } = require('./helpers');
 
 test('project card opens a modal with details and closes again', async ({ page }) => {

@@ -153,7 +153,6 @@ function pick(id) {
   window.scrollTo(0, 0);
 }
 document.querySelectorAll('.profile').forEach(b => b.addEventListener('click', () => pick(b.dataset.id)));
-document.getElementById('skip').addEventListener('click', () => pick('guest'));
 document.getElementById('who').addEventListener('click', () => { document.getElementById('picker').classList.remove('gone'); document.body.style.overflow = 'hidden'; });
 const TINT = { recruiter: '#e5231b', manager: '#2563eb', engineer: '#12a37a', guest: '#e8b923' };
 function whoTint(id) { document.getElementById('who-i').style.background = TINT[id] || '#1b1b1f'; }
