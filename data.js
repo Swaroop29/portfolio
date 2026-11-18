@@ -39,6 +39,7 @@ const repos = [
   { n: "hackerrank-orchestrate-may26", d: "RAG triage agent for the HackerRank Orchestrate hackathon. Ranked 99th of 12,885.", l: "Python", c: "#3572A5", s: 0, u: "https://github.com/Swaroop29/hackerrank-orchestrate-may26" },
   { n: "HydrogenHub", d: "Geospatial cost model and interactive map for green hydrogen supply in the UK.", l: "Python", c: "#3572A5", s: 0, u: "https://github.com/Swaroop29/HydrogenHub" },
   { n: "My-City-Android-Studios-", d: "Android app for municipality complaint registration.", l: "Java", c: "#b07219", s: 0, u: "https://github.com/Swaroop29/My-City-Android-Studios-" },
+  { n: "portfolio", d: "This site: a streaming-style portfolio with automated browser tests and CI.", l: "JavaScript", c: "#f1e05a", s: 0, u: "https://github.com/Swaroop29/portfolio" },
   { n: "Online-Food-Management", d: "DBMS mini project: online food management system.", l: "PHP", c: "#4F5D95", s: 0, u: "https://github.com/Swaroop29/Online-Food-Management" }
 ];
 const skills = [

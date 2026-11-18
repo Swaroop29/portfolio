@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('./fixtures');
 const { skipIntro } = require('./helpers');
 
 // Replace GoatCounter with a recorder so we can see exactly what a visitor's actions send.

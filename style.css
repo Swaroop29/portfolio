@@ -32,8 +32,6 @@ h1, h2, h3 { margin: 0; font-weight: 400; text-wrap: balance; }
 .profile span { display: block; margin-top: 12px; font-size: 17px; transition: color .15s; }
 .profile:hover .av, .profile:focus-visible .av { border-color: #fff; transform: scale(1.05); }
 .profile:hover span, .profile:focus-visible span { color: #fff; }
-.skip { background: none; border: 1px solid var(--muted); color: var(--muted); padding: 10px 26px; letter-spacing: .12em; font-size: 14px; text-transform: uppercase; }
-.skip:hover { color: #fff; border-color: #fff; }
 
 /* ---------- nav ---------- */
 header.top { position: fixed; top: 0; left: 0; right: 0; z-index: 20; height: 66px; display: flex; align-items: center; gap: 32px; background: linear-gradient(#000c, #0000); transition: background .25s; }
@@ -155,28 +153,6 @@ main { position: relative; z-index: 3; margin-top: -110px; }
 .kb-box h3 { font-family: var(--display); font-size: 32px; letter-spacing: .03em; margin-bottom: 12px; }
 .kb-box ul { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 8px; }
 .kb-box kbd { display: inline-block; min-width: 28px; text-align: center; margin-right: 10px; padding: 2px 8px; border-radius: 5px; border: 1px solid #ffffff40; background: var(--panel-2); font: 600 13px var(--body); }
-@media print {
-  @page { margin: 14mm; }
-  html, body { background: #fff !important; color: #111 !important; }
-  #picker, #intro, header.top, .tabbar, .replay, #modal, #kb, .arrow, .cta, .flink, .billboard::before, .billboard::after { display: none !important; }
-  .billboard { min-height: 0 !important; height: auto !important; padding: 0 0 12px !important; background: none !important; display: block !important; }
-  .bb h1, .bb p, .meta span, .meta, #tag, .series { color: #111 !important; text-shadow: none !important; }
-  .bb h1 { font-size: 54px !important; }
-  .bb .stats, .stats { color: #111 !important; }
-  main { margin-top: 0 !important; }
-  .row, .upnext { margin-bottom: 14px !important; padding: 0 !important; break-inside: avoid-page; }
-  .track { display: flex !important; flex-wrap: wrap !important; overflow: visible !important; gap: 10px !important; }
-  .card, .tile, .bey { break-inside: avoid; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-  .bey-in { transform: none !important; } .bf.back { display: none !important; }
-  .ep-layout { display: block !important; } .recap { position: static !important; margin-top: 12px; }
-  .ep-more { grid-template-rows: 1fr !important; } .ep-more-in { overflow: visible !important; }
-  .ep .chev { display: none !important; }
-  .episodes, .about, .recap, .ep, .ep-head { background: #fff !important; color: #111 !important; border-color: #ddd !important; }
-  .about p, .ep p, .ep-more-in p, .ep-more-in li, .recap .stat span, .recap .now, dd, dt { color: #222 !important; }
-  .upnext { background: none !important; } .upnext h2, .upnext p, .upnext small, .mail { color: #111 !important; }
-  footer { color: #444 !important; }
-}
-
 /* up next / contact */
 .upnext { margin: 20px 0 0; padding-top: 64px; padding-bottom: 56px; text-align: center; background: radial-gradient(700px 300px at 50% 100%, #e5231b33, transparent 70%); }
 .upnext small { display: block; letter-spacing: .3em; color: var(--accent); font-weight: 700; font-size: clamp(20px, 3.2vw, 32px); }
@@ -483,7 +459,6 @@ header.top .brand { font-size: 25px; }
 @media (max-width: 480px) and (max-height: 700px) {
   #picker { padding-top: 76px; gap: 14px; }
   .profile { width: min(34vw, 124px); }
-  .skip { padding: 9px 22px; }
 }
 @media (max-width: 400px) { header.top .right { gap: 8px; } header.top .right .b, header.top .right a { padding-left: 12px; padding-right: 12px; } .who { gap: 6px; font-size: 13px; } .who i { width: 34px; height: 34px; } }
 @media (prefers-reduced-motion: reduce) { .intro { display: none !important; } .wrow { animation: none; } }

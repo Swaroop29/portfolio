@@ -31,7 +31,6 @@
     var t = e.target;
     var profile = t.closest('.profile');
     if (profile) return track('profile/' + profile.dataset.id, 'Chose profile: ' + profile.dataset.id);
-    if (t.closest('#skip')) return track('profile/guest', 'Continued as guest');
     if (t.closest('#replay')) return track('intro/replay', 'Replayed intro');
 
     var card = t.closest('#t-projects .card');

@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="print.css" media="print">
 </head>
 <body>
 
@@ -29,7 +30,6 @@
     <button class="profile" data-id="engineer"><div class="bubble" aria-hidden="true">Compiling…</div><div class="av" style="animation-delay:-2.1s"><img src="assets/avatar-engineer.webp" alt="Engineer character typing on a laptop" draggable="false"><div class="fx code-rain" aria-hidden="true"><b>01</b><b>&lt;/&gt;</b><b>{ }</b><b>10</b><b>=&gt;</b></div></div><span>Engineer</span></button>
     <button class="profile" data-id="guest"><div class="bubble" aria-hidden="true">Ooh, what's this?</div><div class="av" style="animation-delay:-3s"><img src="assets/avatar-guest.webp" alt="Curious visitor character with a magnifying glass" draggable="false"><div class="fx glint" aria-hidden="true"></div></div><span>Just Browsing</span></button>
   </div>
-  <button class="skip" id="skip">Continue as guest</button>
   <button class="replay" id="replay">&#8635; Replay intro</button>
 </div>
 
@@ -52,7 +52,7 @@
 <section class="billboard pad" id="home">
   <div class="bb">
     <div class="series">NOW STREAMING</div>
-    <h1>Swaroop<br>Patil</h1>
+    <h1><span>Swaroop</span><br><span>Patil</span></h1>
     <div class="meta">
       <b class="match">98% Match <span aria-label="just kidding" role="img" style="font-weight:400">&#128521;</span></b>
       <span>2026</span>

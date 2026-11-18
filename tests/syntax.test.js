@@ -18,9 +18,11 @@ test('data.js runs and defines projects, repos and skills', () => {
   assert.ok(Array.isArray(d.skills) && d.skills.length > 0, 'skills');
 });
 
-test('CSS has balanced braces', () => {
-  const css = read('style.css').replace(/\/\*[\s\S]*?\*\//g, '');
-  const open = (css.match(/\{/g) || []).length;
-  const close = (css.match(/\}/g) || []).length;
-  assert.strictEqual(open, close, `{ count ${open} vs } count ${close}`);
-});
+for (const file of ['style.css', 'print.css']) {
+  test(`${file} has balanced braces`, () => {
+    const css = read(file).replace(/\/\*[\s\S]*?\*\//g, '');
+    const open = (css.match(/\{/g) || []).length;
+    const close = (css.match(/\}/g) || []).length;
+    assert.strictEqual(open, close, `{ count ${open} vs } count ${close}`);
+  });
+}
