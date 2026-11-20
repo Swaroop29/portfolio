@@ -1,0 +1,130 @@
+# Swaroop Patil
+
+> Software engineer (backend, distributed systems, cloud, AI tooling). Portfolio: https://swaroop-patil.pages.dev
+
+This file holds the full content of the portfolio so that people and AI agents can read all of it without running JavaScript.
+
+## Contact
+- Email me: swaroop.patil29@gmail.com
+- LinkedIn: https://www.linkedin.com/in/swaroop29/
+- GitHub: https://github.com/Swaroop29
+- LeetCode: https://leetcode.com/u/Swaroop29
+- Instagram: https://www.instagram.com/swaroop.patil29/
+- UK +44 7741 531618: +447741531618
+- India +91 83088 66871: +918308866871
+
+## About
+ORIGINAL ENGINEER About Swaroop I am a software engineer with an MSc in Advanced Computer Science from the University of Exeter. At Amazon I built and ran production systems on AWS, from AI-driven analytics to a zero-downtime multi-region migration. Away from the keyboard I play chess and badminton, squad up in PUBG, and head for the mountains whenever I can. Next I want a team building real products, where I can keep shipping across the stack and bring AI tooling into everyday engineering.
+
+## Experience
+
+### Amazon Software Development Engineer · Jun 2025 to Feb 2026 · EU Prime Tech, London
+- 1 PILOT Built an AI campaign analytics platform Designed and deployed it on AWS Lambda and Bedrock. Bedrock agents and RAG automated roughly two weeks a month of manual marketing analysis across five EU marketplaces. Lambda · Bedrock The situation Marketing performance reporting for EU Prime campaigns was a manual job for engineering and marketing teams. What I did Bedrock agent and RAG pipeline that automates marketing analysis across five EU marketplaces, roughly two weeks of manual work a month. Audience intelligence platform that segments customers into behaviour-based cohorts. Data pipelines for feature engineering, processing and cohort generation, plus an ML clustering prototype feeding a business-facing dashboard. AI-assisted query generation that computes customer segments dynamically. Built with AWS Lambda, Amazon Bedrock, Python, S3, Glue
+- 2 SCALE Cut about $12K a month in database over-provisioning Python and Bash automation that provisions and scales DynamoDB ahead of Prime Day and Black Friday. Cost The situation Prime Day and Black Friday traffic meant database capacity was provisioned well above what was needed. What I did Automated cloud database capacity scaling for high-traffic events. Python and Bash automation that provisions and scales DynamoDB ahead of each event. Cut over-provisioning, saving about $12K a month. Built with Python, Bash, DynamoDB
+- 3 OWNER Led a zero-downtime multi-region migration Moved a customer-facing promotional policy service with a Route 53 rollout plan and automated validation and rollback. No service degradation. Migration The situation A customer-facing promotional policy service ran in a single region. What I did Led the migration end to end from single-region to multi-region. Route 53 rollout plan with canary traffic splitting, automated validation and a rollback path. Zero downtime, with better availability and latency. Built with AWS, Route 53, multi-region architecture
+- 4 RESCUE Root-caused a high-severity incident Traced a TLS certificate SAN mismatch behind 5,000+ failed requests in the order checkout pipeline and shipped monitoring so it cannot recur. Also primary on-call for ranking and promotional services. Incident The situation 5,000+ customer requests were failing in the order checkout pipeline. What I did Root-caused it to a TLS certificate SAN mismatch using CloudWatch Logs Insights. Shipped monitoring so the same failure cannot go unnoticed again. Primary on-call for distributed services: production incidents, infrastructure issues and CI/CD failures. Built with CloudWatch Logs Insights, TLS, monitoring
+
+### Emerald Green Power Software Engineer (Intern) · Jan 2024 to Jan 2025 · Exeter, UK
+- 1 BUILD Built a live monitoring dashboard React, Node.js and MongoDB. Gave engineers real-time visibility into green fuel system performance. Full stack The situation Engineers needed real-time visibility into how green fuel systems were performing. What I did Built the live monitoring dashboard as a full-stack feature. React front end with a Node.js and MongoDB back end. Built with React, Node.js, MongoDB
+- 2 TUNE Made the backend API 15% faster Profiled bottlenecks and optimised the Python logic behind the API. Performance The situation The backend API was slower than it needed to be. What I did Profiled the API to find the bottlenecks. Optimised the Python logic behind it, making the API 15% faster. Built with Python, profiling
+
+### Azure Skynet Solutions Machine Learning Intern · Aug 2022 to Sep 2022 · Delhi, India (remote)
+- 1 ML First hands-on machine learning work Data analysis, model development and predictive analytics on machine learning projects, done remotely from India. ML The situation A remote internship in machine learning. What I did Hands-on data analysis, model development and predictive analytics. First industry experience in artificial intelligence. Built with Machine learning, Python
+
+## Education
+- Undergraduate · India B.Tech, Computer Science Vivekananda College of Engineering and Technology · 2019 to 2023 · CGPA 8.52 ML Intern, Aug 2022 National poster competition winner, 2023 Built: an ML-powered interview evaluation system in Python and Flask on AWS, with anomaly detection and response-quality models. Result: presented at a national poster competition in 2023 and won.
+- Postgraduate · UK MSc, Advanced Computer Science University of Exeter · 2023 to 2024 · Merit (2:1) Software Engineer (Intern), Jan 2024 to Jan 2025 Hack South West 2024 winner Built: the Green Hydrogen Optimiser, a full-stack app with a geospatial cost-optimisation model for UK renewable energy, storage and transport. Also: interned at Emerald Green Power in Exeter and won Hack South West 2024.
+
+## Projects
+### Company Brain
+Graph agent · FalkorDB · MCP | HACKATHON + BLOG
+Problem: Answers about a company are scattered across people, systems and incidents, and an AI agent that cannot show its reasoning is hard to trust.
+What I built: An agent that answers questions over a company knowledge graph in FalkorDB. Every answer shows the exact Cypher query it ran. Includes incident response, shared agent memory and an MCP interface.
+Result: Submitted to Graph Hacks (FalkorDB x WeMakeDevs), live demo and video available
+Built with: Python, FalkorDB, Cypher, MCP, Streamlit
+My role: Built it (with Claude assistance, disclosed in the README)
+Architecture: Question -> Agent -> Cypher on FalkorDB -> Answer + query
+Live demo: https://terminatorcompanybrain.streamlit.app
+Source: https://github.com/Swaroop29/company-brain
+Write-up: https://dev.to/swaroop_patil_d9a2f9cb9de/when-the-event-bus-fails-building-company-brain-with-falkordb-21fm
+
+### AI Campaign Analytics
+AWS Lambda · Bedrock | AT AMAZON
+Problem: Marketing performance reporting for EU Prime campaigns was a manual workflow for engineering and marketing teams.
+What I built: Designed and deployed an AI-driven campaign analytics platform on AWS Lambda and Bedrock that automates the reporting.
+Result: Replaced a manual reporting workflow
+Built with: AWS Lambda, Amazon Bedrock
+My role: Designed and deployed it (EU Prime Tech, Amazon)
+Architecture: Campaign data -> Lambda -> Bedrock -> Reports
+
+
+### InfluencerConnect
+Bedrock · Claude · FastAPI | MVP
+Problem: Brands find influencers by filtering spreadsheets and guessing at fit.
+What I built: An agentic brand and influencer matching platform. Brands describe what they want in plain language and a RAG pipeline on Bedrock and Claude finds and ranks matches.
+Result: MVP built
+Built with: Amazon Bedrock, Claude, FastAPI, RAG
+My role: Built it
+Architecture: Brand request -> Agent -> RAG on Bedrock -> Ranked matches
+
+
+### AI Interview Platform
+Python · Flask · AWS | PRESENTED
+Problem: Running and evaluating candidate interviews end to end, for many candidates at the same time.
+What I built: An ML-powered interview evaluation system in Python and Flask on AWS, with anomaly detection and response-quality models.
+Result: Presented at a national poster competition (2023)
+Built with: Python, Flask, AWS, ML models
+My role: Built the system
+Architecture: Candidate session -> Flask API -> ML models -> Evaluation
+
+
+### Green Hydrogen Optimiser
+Full stack · Geospatial | MSC
+Problem: Planning where to generate, store and transport green hydrogen across the UK, and what that costs.
+What I built: A full-stack web app that simulates renewable energy generation, storage and transport across the UK, built around a geospatial cost-optimisation model.
+Result: Cost-optimisation model and map views across the UK
+Built with: GeoPandas, Cartopy, D3.js, Leaflet, Google Maps API
+My role: Designed the geospatial cost-optimisation model
+Architecture: Geo data -> Optimiser -> Web app -> Map views
+
+
+### LendEase
+React · Python · MongoDB · ML | HACKATHON WINNER
+Problem: People without easy access to traditional banking, such as international students, low-income households and minorities, face high interest rates and collateral demands when they need money in an emergency.
+What I built: A community-driven lending platform that pairs community lending networks with machine learning credit-assessment models, plus financial education features. Built with a React front end, a Python back end and MongoDB.
+Result: Winner, Hack South West 2024. Written up in a published paper
+Built with: React, Python, MongoDB, scikit-learn, TensorFlow
+My role: Built it and wrote the paper
+Architecture: Community -> Loan request -> ML credit model -> Decision
+
+
+### This Portfolio
+HTML · CSS · JS · CI | THIS SITE
+Problem: A CV is a flat list. I wanted a recruiter, a manager and an engineer to each find what they need in under a minute, and I wanted proof the site keeps working.
+What I built: A streaming-style portfolio with a profile picker, project pages, flip cards and an education timeline. Plain HTML, CSS and JavaScript on Cloudflare Pages, with automated tests and a CI pipeline on every change.
+Result: Every change is tested on desktop, tablet and phone profiles before it deploys
+Built with: HTML, CSS, JavaScript, Cloudflare Pages, GitHub Actions, Playwright, GoatCounter
+My role: Designed and built it, working with Claude
+Architecture: GitHub -> Tests (CI) -> Cloudflare Pages -> Live check
+What I would do differently: A hand-edited change once broke the live site for about ten hours. Now every change is tested on real browsers and devices before it deploys, and a live-site check raises an alert if anything breaks.
+Source: https://github.com/Swaroop29/portfolio
+
+## GitHub repositories
+- company-brain (Python): Graph agent over a company knowledge graph. Shows the exact Cypher query behind every answer. https://github.com/Swaroop29/company-brain
+- hackerrank-orchestrate-may26 (Python): RAG triage agent for the HackerRank Orchestrate hackathon. Ranked 99th of 12,885. https://github.com/Swaroop29/hackerrank-orchestrate-may26
+- HydrogenHub (Python): Geospatial cost model and interactive map for green hydrogen supply in the UK. https://github.com/Swaroop29/HydrogenHub
+- My-City-Android-Studios- (Java): Android app for municipality complaint registration. https://github.com/Swaroop29/My-City-Android-Studios-
+- portfolio (JavaScript): This site: a streaming-style portfolio with automated browser tests and CI. https://github.com/Swaroop29/portfolio
+- Online-Food-Management (PHP): DBMS mini project: online food management system. https://github.com/Swaroop29/Online-Food-Management
+
+## Skills
+- Java (Languages)
+- Python (Languages)
+- AWS (Cloud)
+- React (Frontend)
+- AI / LLMs (Bedrock · RAG)
+- Distributed Systems (Backend)
+- Node.js (Backend)
+- SQL (Data)
+- DynamoDB (AWS · NoSQL)
+- Microservices (Architecture)
