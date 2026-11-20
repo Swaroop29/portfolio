@@ -496,3 +496,10 @@ header.top .brand { font-size: 25px; }
 
 /* Long titles such as "InfluencerConnect" must fit inside narrow cards */
 @media (max-width: 1100px) { .card .label b { font-size: 24px; } }
+
+.textver{margin:0;padding:18px 4%;color:#b3b3b3;font-size:14px;line-height:1.55;border-top:1px solid #222}
+.textver summary{cursor:pointer;color:#e5e5e5}
+.textver h3{margin:18px 0 6px;color:#e5e5e5}
+.textver h4{margin:14px 0 4px;color:#fff}
+.textver p{margin:3px 0}
+.textver a{color:inherit;text-decoration:underline}
