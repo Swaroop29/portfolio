@@ -4,7 +4,7 @@ const projects = [
     problem: "Answers about a company are scattered across people, systems and incidents, and an AI agent that cannot show its reasoning is hard to trust.", built: "An agent that answers questions over a company knowledge graph in FalkorDB. Every answer shows the exact Cypher query it ran. Includes incident response, shared agent memory and an MCP interface.",
     result: "Submitted to Graph Hacks (FalkorDB x WeMakeDevs), live demo and video available", stack: "Python, FalkorDB, Cypher, MCP, Streamlit", role: "Built it (with Claude assistance, disclosed in the README)",
     blurb: "A graph-backed agent that shows the exact query behind every answer.", tags: ["FalkorDB","Cypher","MCP","Write-up"], arch: ["Question","Agent","Cypher on FalkorDB","Answer + query"], diff: "",
-    live: "https://terminatorcompanybrain.streamlit.app", src: "https://github.com/Swaroop29/company-brain", blog: "https://dev.to/swaroop_patil_d9a2f9cb9de/when-the-event-bus-fails-building-company-brain-with-falkordb-21fm" },
+    src: "https://github.com/Swaroop29/company-brain", blog: "https://dev.to/swaroop_patil_d9a2f9cb9de/when-the-event-bus-fails-building-company-brain-with-falkordb-21fm" },
   { t: "AI Campaign Analytics", sub: "AWS Lambda &middot; Bedrock", badge: "AT AMAZON", g: "linear-gradient(135deg,#7a1410 0%,#e5231b 55%,#ff8a5c 100%)",
     problem: "Marketing performance reporting for EU Prime campaigns was a manual workflow for engineering and marketing teams.", built: "Designed and deployed an AI-driven campaign analytics platform on AWS Lambda and Bedrock that automates the reporting.",
     result: "Replaced a manual reporting workflow", stack: "AWS Lambda, Amazon Bedrock", role: "Designed and deployed it (EU Prime Tech, Amazon)",
