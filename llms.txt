@@ -44,7 +44,6 @@ Result: Submitted to Graph Hacks (FalkorDB x WeMakeDevs), live demo and video av
 Built with: Python, FalkorDB, Cypher, MCP, Streamlit
 My role: Built it (with Claude assistance, disclosed in the README)
 Architecture: Question -> Agent -> Cypher on FalkorDB -> Answer + query
-Live demo: https://terminatorcompanybrain.streamlit.app
 Source: https://github.com/Swaroop29/company-brain
 Write-up: https://dev.to/swaroop_patil_d9a2f9cb9de/when-the-event-bus-fails-building-company-brain-with-falkordb-21fm
 
